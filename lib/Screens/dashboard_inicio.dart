@@ -50,19 +50,19 @@ class _dashInicioState extends State<dashInicio> {
         ),
         // Extended image
         ExtendedImage.asset(
-          'assets/Centro_de_Informacionmain.jpg',
+          'assets/CI_main.jpeg',
           // cache: true, (by default caches image)
           shape: BoxShape.rectangle,
           borderRadius: const BorderRadius.all(Radius.circular(30.0)),
         ),
-        CardAdministracion(),
+        CardimgMain(),
         const SizedBox(height: 10.0),
         Image.asset("assets/footer.PNG")
       ],
     );
   }
 
-  Card CardAdministracion() {
+  Card CardimgMain() {
     return Card(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
       margin: EdgeInsets.all(15),
@@ -70,7 +70,7 @@ class _dashInicioState extends State<dashInicio> {
       child: Column(
         children: <Widget>[
           FadeInImage(
-            image: AssetImage('assets/biblioteca.jpg'),
+            image: AssetImage('assets/CI_books_main.jpeg'),
             placeholder: AssetImage('assets/Loading.gif'),
             fit: BoxFit.cover,
             height: 260,

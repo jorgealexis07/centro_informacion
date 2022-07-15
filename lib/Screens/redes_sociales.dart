@@ -40,7 +40,7 @@ Widget _ListView(BuildContext context) {
   return ListView(
     //scrollDirection: Axis.vertical, itemCount: 10, itemBuilder: (context,position){return Padding(padding: const EdgeInsets.all(8.0),child: Container(  width: 200.0,height: 150.0, color: Colors.blue, child: Text("Posicion $position"),),); },
     children: <Widget>[
-      CardAdministracion(),
+      CardRedes(),
       CardMediosdeContacto(),
     ],
   );
@@ -52,7 +52,7 @@ final String AdminText = "Implementación de metodologías para la mejora: \n\n\
     " -  Asesoramiento básico en administración y recursos humanos. \n\n"
     " -  Asesoramiento en NOM-035. \n";
 
-Card CardAdministracion() {
+Card CardRedes() {
   return Card(
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
     margin: EdgeInsets.all(15),
@@ -109,7 +109,8 @@ Card CardMediosdeContacto() {
               ),
               onPressed: () async {
                 var res = await UrlLaunch_Services().launchUniversalLinkIos(
-                    Uri.parse("https://twitter.com/ci_tese?lang=es"));
+                    Uri.parse(
+                        "https://mail.google.com/mail/u/1/#inbox?compose=VpCqJPswDdxLnsJmlWWbsgkBGpRplCBTlBbgxRcFHwjpfrWRPDqGBBLrzhqhnSNLvvJwPzB"));
               },
             ),
             FlatButton(

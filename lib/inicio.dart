@@ -33,7 +33,7 @@ class _InicioState extends State<Inicio> {
             height: 300.0,
           ),
           SizedBox(height: 50.0),
-          SpinKitWanderingCubes(color: Colors.amber),
+          SpinKitWanderingCubes(color: Colors.orange),
         ],
       ),
     );

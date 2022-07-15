@@ -23,11 +23,17 @@ class UrlLaunch_Services {
     }
   }
 
-  makePhoneCall(String phoneNumber) async {
-    final Uri launchUri = Uri(
-      scheme: 'tel',
-      path: phoneNumber,
+  launchUniversalMailIos() async {
+    final url = Uri(
+      scheme: 'mailto',
+      path: 'biblioteca@tese.edu.mx',
+      query: 'subject=Hello&body=Test',
     );
-    await launchUrl(launchUri);
+    if (await canLaunchUrl(url)) {
+      launchUrl(url);
+    } else {
+      // ignore: avoid_print
+      print("Can't launch $url");
+    }
   }
 }

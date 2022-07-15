@@ -79,8 +79,8 @@ flutter:
   assets:
     - assets/logo_centro_informacion.png
     - assets/icon.svg
-    - assets/Centro_de_Informacionmain.jpg
-    - assets/biblioteca.jpg
+    - assets/CI_books_main.jpeg
+    - assets/CI_main.jpeg
     - assets/Loading.gif
     - assets/mapa_museum.png
     - assets/donacionlibros.jpg

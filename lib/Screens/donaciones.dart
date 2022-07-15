@@ -52,8 +52,31 @@ class _playerdonationsState extends State<playerdonations> {
                     Uri.parse(
                         "https://www.myebooks.com/collections/tese?page=1"));
               },
-              child: Text("Realizar Donacion")),
-          const SizedBox(height: 50.0),
+              child: Text("Realizar Donacion MyBooks")),
+          const SizedBox(height: 10.0),
+          ElevatedButton(
+              onPressed: () async {
+                var res = await UrlLaunch_Services().launchUniversalLinkIos(
+                    Uri.parse(
+                        "https://www.myebooks.com/collections/donacion-de-libros-mcgraw-hill?page=1"));
+              },
+              child: Text("Realizar Donacion de Mc Graw Hill")),
+          const SizedBox(height: 10.0),
+          ElevatedButton(
+              onPressed: () async {
+                var res = await UrlLaunch_Services().launchUniversalLinkIos(
+                    Uri.parse(
+                        "https://tese.bibliotecasdigitales.com/home?category=1&institution_id=50"));
+              },
+              child: Text("Realizar Donacion de AlfaOmega")),
+          const SizedBox(height: 10.0),
+          ElevatedButton(
+              onPressed: () async {
+                var res = await UrlLaunch_Services().launchUniversalLinkIos(
+                    Uri.parse("https://www.myebooks.com/collections/tese"));
+              },
+              child: Text("Realizar Donacion de Cengage")),
+          const SizedBox(height: 10.0),
           Image.asset("assets/footer.PNG")
         ],
       ),
